@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 400px;
+    width: 100%; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.form {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-container:last-child {
+    margin: 0;
+}
+
+label {
+    color: #808080;
+    display: block;
+    /* margin-bottom: 10px; */
+}
+
+input,
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+input {
+    border: 1px solid #808080;
+}
+
+.form-container.success input {
+    border: 2px solid #008000;
+}
+
+.form-container.error input{
+    border: 2px solid #FF0000;
+}
+
+
+
+small {
+    color: #FF0000;
+    visibility: hidden;
+}
+
+.form-container.error small {
+    visibility: visible;
+}
+
+#submit-btn {
+    cursor: pointer;
+    background-color: #4BA8FF;
+    color: #fff;
+}
